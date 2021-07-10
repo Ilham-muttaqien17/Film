@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upcoming</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light mb-3">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link active"><img src="assets/home.svg" class="d-inline-block align-top" alt=""> Home</a>
+                    <a href="top-rated.html" class="nav-item nav-link active"><img src="assets/star.svg" class="d-inline-block align-top" alt=""> Top Rated</a>
+                    <a href="upcoming.html" class="nav-item nav-link active"><img src="assets/update.svg" class="d-inline-block align-top" alt=""> Upcoming</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 rounded-pill text-dark search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn bg-dark text-white my-2 my-sm-0 rounded-pill" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </nav>
+
+    <!-- Category -->
+    <div class="container text-center">
+        <div class="category">
+            <a href="genre/action.html" class="cat btn rounded-pill">Action</a>
+            <a href="genre/adventure.html" class="cat btn rounded-pill">Adventure</a>
+            <a href="genre/comedy.html" class="cat btn rounded-pill">Comedy</a>
+            <a href="genre/crime.html" class="cat btn rounded-pill">Crime</a>
+            <a href="genre/mystery.html" class="cat btn rounded-pill">Mystery</a>
+            <a href="genre/war.html" class="cat btn rounded-pill">War</a>
+            <a href="genre/horror.html" class="cat btn rounded-pill">Horror</a>
+        </div>
+    </div>
+
+    <!-- Poster -->
+    <div class="container mt-4">
+        <div class="poster-group">
+            <div class="row">
+                <div class="card-group text-white">
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb1" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p id="title1"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average1"></p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb2" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title2"></p>
+                                    
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average2"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb3" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title3"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average3"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb4" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title4"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average4"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb5" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title5"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average5"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="card-group text-white">
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb6" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title6"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average6"></p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb7" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title7"></p>
+                                    
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average7"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb8" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title8"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average8"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb9" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title9"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average9"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="gradient-overlay">
+                            <img src="" class="card-img-top" id="thumb10" />
+                        </div>
+                        <div class="card-img-overlay">
+                            <div class="row desc w-100">
+                                <div class="col-8">
+                                    <p class="title" id="title10"></p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="rate" id="vote_average10"></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Button Control Page -->
+    <div class="container">
+        <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link prev" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link next" href="#">Next</a>
+                </li>
+            </ul>
+          </nav>
+    </div>
+
+    
+    <script>
+        key = "eee29f62dd6c14934675b6ba70efafb1";
+        api = "https://api.themoviedb.org/3/movie/"
+
+        $(document).ready(function(){
+            $.ajax({
+                url: api + 'upcoming?api_key=' + key,
+                success: function(res){
+                    console.log(JSON.stringify(res));
+
+                    $('#title1').html(res.results[0].title);
+                    $('#vote_average1').html(res.results[0].vote_average);
+                    images1 = 'https://image.tmdb.org/t/p/original/' + res.results[0].poster_path;
+                    document.getElementById('thumb1').src = images1;
+
+                    $('#title2').html(res.results[1].title);
+                    $('#vote_average2').html(res.results[1].vote_average);
+                    images2 = 'https://image.tmdb.org/t/p/original/' + res.results[1].poster_path;
+                    document.getElementById('thumb2').src = images2;
+
+                    $('#title3').html(res.results[2].title);
+                    $('#vote_average3').html(res.results[2].vote_average);
+                    images3 = 'https://image.tmdb.org/t/p/original/' + res.results[2].poster_path;
+                    document.getElementById('thumb3').src = images3;
+
+                    $('#title4').html(res.results[3].title);
+                    $('#vote_average4').html(res.results[3].vote_average);
+                    images4 = 'https://image.tmdb.org/t/p/original/' + res.results[3].poster_path;
+                    document.getElementById('thumb4').src = images4;
+
+                    $('#title5').html(res.results[4].title);
+                    $('#vote_average5').html(res.results[4].vote_average);
+                    images5 = 'https://image.tmdb.org/t/p/original/' + res.results[4].poster_path;
+                    document.getElementById('thumb5').src = images5;
+
+                    $('#title6').html(res.results[5].title);
+                    $('#vote_average6').html(res.results[5].vote_average);
+                    images6 = 'https://image.tmdb.org/t/p/original/' + res.results[5].poster_path;
+                    document.getElementById('thumb6').src = images6;
+
+                    $('#title7').html(res.results[6].title);
+                    $('#vote_average7').html(res.results[6].vote_average);
+                    images7 = 'https://image.tmdb.org/t/p/original/' + res.results[6].poster_path;
+                    document.getElementById('thumb7').src = images7;
+
+                    $('#title8').html(res.results[7].title);
+                    $('#vote_average8').html(res.results[7].vote_average);
+                    images8 = 'https://image.tmdb.org/t/p/original/' + res.results[7].poster_path;
+                    document.getElementById('thumb8').src = images8;
+
+                    $('#title9').html(res.results[8].title);
+                    $('#vote_average9').html(res.results[8].vote_average);
+                    images9 = 'https://image.tmdb.org/t/p/original/' + res.results[8].poster_path;
+                    document.getElementById('thumb9').src = images9;
+
+                    $('#title10').html(res.results[9].title);
+                    $('#vote_average10').html(res.results[9].vote_average);
+                    images10 = 'https://image.tmdb.org/t/p/original/' + res.results[9].poster_path;
+                    document.getElementById('thumb10').src = images10;
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>
